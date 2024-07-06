@@ -6,6 +6,13 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Company>jerome.hou</Company>
+    <Authors>$(AssemblyName)</Authors>
+    <Copyright>jerome.hou</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
+  </ItemGroup>
 
 </Project>

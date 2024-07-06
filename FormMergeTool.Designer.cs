@@ -37,6 +37,8 @@
             labelResult = new Label();
             labelLeftBorder = new Label();
             textBoxLeftBorder = new TextBox();
+            textBoxHeight = new TextBox();
+            labelHeight = new Label();
             SuspendLayout();
             // 
             // buttonPath
@@ -56,7 +58,7 @@
             textBoxPath.Margin = new Padding(2);
             textBoxPath.Name = "textBoxPath";
             textBoxPath.ReadOnly = true;
-            textBoxPath.Size = new Size(457, 23);
+            textBoxPath.Size = new Size(418, 23);
             textBoxPath.TabIndex = 1;
             textBoxPath.WordWrap = false;
             // 
@@ -68,7 +70,7 @@
             textBoxWidth.Name = "textBoxWidth";
             textBoxWidth.Size = new Size(98, 23);
             textBoxWidth.TabIndex = 2;
-            textBoxWidth.Text = "1920";
+            textBoxWidth.Text = "842";
             textBoxWidth.KeyPress += textBox_KeyPress;
             // 
             // labelWidth
@@ -83,7 +85,7 @@
             // 
             // buttonRun
             // 
-            buttonRun.Location = new Point(37, 217);
+            buttonRun.Location = new Point(37, 177);
             buttonRun.Margin = new Padding(2);
             buttonRun.Name = "buttonRun";
             buttonRun.Size = new Size(73, 23);
@@ -95,7 +97,7 @@
             // labelResult
             // 
             labelResult.AutoSize = true;
-            labelResult.Location = new Point(131, 140);
+            labelResult.Location = new Point(152, 181);
             labelResult.Margin = new Padding(2, 0, 2, 0);
             labelResult.Name = "labelResult";
             labelResult.Size = new Size(0, 15);
@@ -104,7 +106,7 @@
             // labelLeftBorder
             // 
             labelLeftBorder.AutoSize = true;
-            labelLeftBorder.Location = new Point(37, 118);
+            labelLeftBorder.Location = new Point(37, 138);
             labelLeftBorder.Margin = new Padding(2, 0, 2, 0);
             labelLeftBorder.Name = "labelLeftBorder";
             labelLeftBorder.Size = new Size(43, 15);
@@ -113,7 +115,7 @@
             // 
             // textBoxLeftBorder
             // 
-            textBoxLeftBorder.Location = new Point(95, 115);
+            textBoxLeftBorder.Location = new Point(95, 135);
             textBoxLeftBorder.Margin = new Padding(2);
             textBoxLeftBorder.MaxLength = 5;
             textBoxLeftBorder.Name = "textBoxLeftBorder";
@@ -121,16 +123,39 @@
             textBoxLeftBorder.TabIndex = 3;
             textBoxLeftBorder.Text = "8";
             // 
+            // textBoxHeight
+            // 
+            textBoxHeight.Location = new Point(95, 108);
+            textBoxHeight.Margin = new Padding(2);
+            textBoxHeight.MaxLength = 5;
+            textBoxHeight.Name = "textBoxHeight";
+            textBoxHeight.Size = new Size(98, 23);
+            textBoxHeight.TabIndex = 2;
+            textBoxHeight.Text = "595";
+            textBoxHeight.KeyPress += textBox_KeyPress;
+            // 
+            // labelHeight
+            // 
+            labelHeight.AutoSize = true;
+            labelHeight.Location = new Point(37, 111);
+            labelHeight.Margin = new Padding(2, 0, 2, 0);
+            labelHeight.Name = "labelHeight";
+            labelHeight.Size = new Size(43, 15);
+            labelHeight.TabIndex = 4;
+            labelHeight.Text = "高像素";
+            // 
             // FormPhotoMergeTool
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(622, 355);
+            ClientSize = new Size(587, 258);
             Controls.Add(labelLeftBorder);
             Controls.Add(textBoxLeftBorder);
             Controls.Add(labelResult);
             Controls.Add(buttonRun);
+            Controls.Add(labelHeight);
             Controls.Add(labelWidth);
+            Controls.Add(textBoxHeight);
             Controls.Add(textBoxWidth);
             Controls.Add(textBoxPath);
             Controls.Add(buttonPath);
@@ -152,5 +177,7 @@
         private Label labelResult;
         private Label labelLeftBorder;
         private TextBox textBoxLeftBorder;
+        private TextBox textBoxHeight;
+        private Label labelHeight;
     }
 }
